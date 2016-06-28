@@ -29,6 +29,6 @@ if __name__ == '__main__':
     cherrypy.quickstart(Root(), '', {'/': {'tools.template.on': True,
                                            'tools.template.template': 'index.html',
                                            'tools.encode.on': False},
-                                     "/generate*":{"tools.template.on":True, 
+                                     "/generate":{"tools.template.on":True, 
                                                   "tools.template.template": "render.html",
-                                                  "tools.encode.on":True}})
+                                                  "tools.encode.on":False}})
